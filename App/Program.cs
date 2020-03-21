@@ -1,7 +1,6 @@
 ﻿using System;
 using Contracts;
 using Microsoft.Extensions.DependencyInjection;
-using PdfSharpLib;
 
 namespace App
 {
@@ -10,12 +9,14 @@ namespace App
         public static void Main()
         {
             var services = new ServiceCollection();
-            services.AddTransient<IPdfGenerator, PdfGenerator>();
+            services.AddTransient<IPdfGenerator, PdfSharpLib.PdfGenerator>();
+            services.AddTransient<IPdfGenerator, SelectPdfLib.PdfGenerator>();
+            services.AddTransient<IPdfGenerator, SelectPdfLib.HtmlPdfGenerator>();
 
             var serviceProvider = services.BuildServiceProvider();
             foreach (var pdfGenerator in serviceProvider.GetServices<IPdfGenerator>())
             {
-                var filename = $"{pdfGenerator.GetType().Name}.pdf";
+                var filename = $"{pdfGenerator.GetType().FullName}.pdf";
                 pdfGenerator.Generate("Hello World!", filename);
             }
 
