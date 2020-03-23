@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -20,12 +20,12 @@
     <Content Include="wkhtmltopdf\windows\x64\wkhtmltopdf.exe">
       <Pack>true</Pack>
       <PackagePath>lib\any\wkhtmltopdf\windows\x64\wkhtmltopdf.exe</PackagePath>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
     <Content Include="wkhtmltopdf\windows\x86\wkhtmltopdf.exe">
       <Pack>true</Pack>
       <PackagePath>lib\any\wkhtmltopdf\windows\x86\wkhtmltopdf.exe</PackagePath>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
