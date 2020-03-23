@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinkToPdfLib", "DinkToPdfLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PugPdfLib", "PugPdfLib\PugPdfLib.csproj", "{EC1BA1B9-CB9B-4355-937D-97A4DED6588C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITextSharpPdfLib", "ITextSharpPdfLib\ITextSharpPdfLib.csproj", "{0944EDB4-DEE0-4F95-A5A1-8B98E18B80E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{EC1BA1B9-CB9B-4355-937D-97A4DED6588C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC1BA1B9-CB9B-4355-937D-97A4DED6588C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC1BA1B9-CB9B-4355-937D-97A4DED6588C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0944EDB4-DEE0-4F95-A5A1-8B98E18B80E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0944EDB4-DEE0-4F95-A5A1-8B98E18B80E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0944EDB4-DEE0-4F95-A5A1-8B98E18B80E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0944EDB4-DEE0-4F95-A5A1-8B98E18B80E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

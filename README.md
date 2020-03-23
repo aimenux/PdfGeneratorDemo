@@ -13,3 +13,4 @@ In this demo, i m generating a pdf file using various libraries :
 - [PugPdf](https://github.com/pug-pelle-p/pugpdf)
 - [DinkToPdf](https://github.com/hakanl/DinkToPdf)
 - [PuppeteerPdf](https://github.com/hardkoded/puppeteer-sharp)
+- [ITextSharpPdf](https://github.com/itext/itext7-dotnet)
