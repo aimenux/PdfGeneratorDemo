@@ -12,6 +12,7 @@ namespace App
             services.AddTransient<IConsoleEnabler, ConsoleEnabler>();
             services.AddTransient<IPdfGenerator, PdfSharpLib.PdfGenerator>();
             services.AddTransient<IPdfGenerator, SpirePdfLib.PdfGenerator>();
+            services.AddTransient<IPdfGenerator, AsposePdfLib.PdfGenerator>();
             services.AddTransient<IPdfGenerator, IronPdfLib.HtmlPdfGenerator>();
             services.AddTransient<IPdfGenerator, SelectPdfLib.PdfGenerator>();
             services.AddTransient<IPdfGenerator, SelectPdfLib.HtmlPdfGenerator>();

@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AsposePdfLib\AsposePdfLib.csproj" />
     <ProjectReference Include="..\Contracts\Contracts.csproj" />
     <ProjectReference Include="..\IronPdfLib\IronPdfLib.csproj" />
     <ProjectReference Include="..\PdfSharpLib\PdfSharpLib.csproj" />

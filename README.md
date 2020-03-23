@@ -5,7 +5,8 @@ Using various libraries in order to generate pdf files
 ```
 
 In this demo, i m generating a pdf file using various libraries :
-- [PdfSharpCore](https://github.com/ststeiger/PdfSharpCore)
-- [SelectPdfCore](https://selectpdf.com/community-edition)
-- [IronPdfCore](https://ironpdf.com)
-- [SpirePdfCore](https://www.e-iceblue.com/Introduce/pdf-for-net-introduce.html)
+- [IronPdf](https://ironpdf.com)
+- [PdfSharp](https://github.com/ststeiger/PdfSharpCore)
+- [SpirePdf](https://www.e-iceblue.com/Introduce/pdf-for-net-introduce.html)
+- [SelectPdf](https://selectpdf.com/community-edition)
+- [AsposePdf](https://products.aspose.com/pdf/net)
