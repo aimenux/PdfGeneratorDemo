@@ -17,18 +17,20 @@ namespace App
             services.AddTransient<IPdfGenerator, SelectPdfLib.PdfGenerator>();
             services.AddTransient<IPdfGenerator, SelectPdfLib.HtmlPdfGenerator>();
             services.AddTransient<IPdfGenerator, PuppeteerPdfLib.HtmlPdfGenerator>();
+            services.AddTransient<IPdfGenerator, DinkToPdfLib.HtmlPdfGenerator>();
 
             var serviceProvider = services.BuildServiceProvider();
             var consoleEnabler = serviceProvider.GetService<IConsoleEnabler>();
             foreach (var pdfGenerator in serviceProvider.GetServices<IPdfGenerator>())
             {
-                consoleEnabler.Off();
                 var filename = BuildFileName(pdfGenerator);
+                ConsoleColor.Green.WriteLine($"Generating {filename}");
+                consoleEnabler.Off();
                 pdfGenerator.Generate("Hello World!", filename);
                 consoleEnabler.On();
             }
 
-            Console.WriteLine("Press any key to exit program !");
+            ConsoleColor.Yellow.WriteLine("Press any key to exit program !");
             Console.ReadKey();
         }
 
