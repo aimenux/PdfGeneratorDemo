@@ -8,3 +8,4 @@ In this demo, i m generating a pdf file using various libraries :
 - [PdfSharpCore](https://github.com/ststeiger/PdfSharpCore)
 - [SelectPdfCore](https://selectpdf.com/community-edition)
 - [IronPdfCore](https://ironpdf.com)
+- [SpirePdfCore](https://www.e-iceblue.com/Introduce/pdf-for-net-introduce.html)

@@ -17,6 +17,7 @@
     <ProjectReference Include="..\IronPdfLib\IronPdfLib.csproj" />
     <ProjectReference Include="..\PdfSharpLib\PdfSharpLib.csproj" />
     <ProjectReference Include="..\SelectPdfLib\SelectPdfLib.csproj" />
+    <ProjectReference Include="..\SpirePdfLib\SpirePdfLib.csproj" />
   </ItemGroup>
 
 </Project>
