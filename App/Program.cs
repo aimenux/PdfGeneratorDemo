@@ -16,6 +16,7 @@ namespace App
             services.AddTransient<IPdfGenerator, IronPdfLib.HtmlPdfGenerator>();
             services.AddTransient<IPdfGenerator, SelectPdfLib.PdfGenerator>();
             services.AddTransient<IPdfGenerator, SelectPdfLib.HtmlPdfGenerator>();
+            services.AddTransient<IPdfGenerator, PuppeteerPdfLib.HtmlPdfGenerator>();
 
             var serviceProvider = services.BuildServiceProvider();
             var consoleEnabler = serviceProvider.GetService<IConsoleEnabler>();
