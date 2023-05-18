@@ -1,4 +1,5 @@
-![.NET Core](https://github.com/aimenux/PdfGeneratorDemo/workflows/.NET%20Core/badge.svg)
+[![.NET](https://github.com/aimenux/PdfGeneratorDemo/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/aimenux/PdfGeneratorDemo/actions/workflows/ci.yml)
+
 # PdfGeneratorDemo
 ```
 Using various libraries in order to generate pdf files
@@ -14,3 +15,5 @@ In this demo, i m generating a pdf file using various libraries :
 - [DinkToPdf](https://github.com/hakanl/DinkToPdf)
 - [PuppeteerPdf](https://github.com/hardkoded/puppeteer-sharp)
 - [ITextSharpPdf](https://github.com/itext/itext7-dotnet)
+- 
+- **`Tools`** : net 7.0, pdf-generation, xunit, fluent-assertions
