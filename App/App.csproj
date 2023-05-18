@@ -1,28 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.2" />
-  </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Libs\AsposePdfLib\AsposePdfLib.csproj" />
+      <ProjectReference Include="..\Libs\DinkToPdfLib\DinkToPdfLib.csproj" />
+      <ProjectReference Include="..\Libs\IronPdfLib\IronPdfLib.csproj" />
+      <ProjectReference Include="..\Libs\ITextSharpPdfLib\ITextSharpPdfLib.csproj" />
+      <ProjectReference Include="..\Libs\PdfSharpLib\PdfSharpLib.csproj" />
+      <ProjectReference Include="..\Libs\PugPdfLib\PugPdfLib.csproj" />
+      <ProjectReference Include="..\Libs\PuppeteerPdfLib\PuppeteerPdfLib.csproj" />
+      <ProjectReference Include="..\Libs\SelectPdfLib\SelectPdfLib.csproj" />
+      <ProjectReference Include="..\Libs\SpirePdfLib\SpirePdfLib.csproj" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AsposePdfLib\AsposePdfLib.csproj" />
-    <ProjectReference Include="..\Contracts\Contracts.csproj" />
-    <ProjectReference Include="..\DinkToPdfLib\DinkToPdfLib.csproj" />
-    <ProjectReference Include="..\IronPdfLib\IronPdfLib.csproj" />
-    <ProjectReference Include="..\ITextSharpPdfLib\ITextSharpPdfLib.csproj" />
-    <ProjectReference Include="..\PdfSharpLib\PdfSharpLib.csproj" />
-    <ProjectReference Include="..\PugPdfLib\PugPdfLib.csproj" />
-    <ProjectReference Include="..\PuppeteerPdfLib\PuppeteerPdfLib.csproj" />
-    <ProjectReference Include="..\SelectPdfLib\SelectPdfLib.csproj" />
-    <ProjectReference Include="..\SpirePdfLib\SpirePdfLib.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    </ItemGroup>
 
 </Project>

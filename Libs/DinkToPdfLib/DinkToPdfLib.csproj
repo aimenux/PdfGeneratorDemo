@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DinkToPdf.Standard" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Contracts\Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\WkhtmltopdfLib\v0.12.4\32 bit\libwkhtmltox.dll">
+      <Link>Links\32\libwkhtmltox.dll</Link>
+    </None>
+    <None Include="..\WkhtmltopdfLib\v0.12.4\64 bit\libwkhtmltox.dll">
+      <Link>Links\64\libwkhtmltox.dll</Link>
+    </None>
+  </ItemGroup>
+
+</Project>
