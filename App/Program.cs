@@ -3,6 +3,7 @@ using Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
 var services = new ServiceCollection();
+services.AddTransient<IPdfGenerator, QuestPdfLib.PdfGenerator>();
 services.AddTransient<IPdfGenerator, PdfSharpLib.PdfGenerator>();
 services.AddTransient<IPdfGenerator, SpirePdfLib.PdfGenerator>();
 services.AddTransient<IPdfGenerator, AsposePdfLib.PdfGenerator>();

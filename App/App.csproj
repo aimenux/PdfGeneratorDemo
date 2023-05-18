@@ -14,6 +14,7 @@
       <ProjectReference Include="..\Libs\PdfSharpLib\PdfSharpLib.csproj" />
       <ProjectReference Include="..\Libs\PugPdfLib\PugPdfLib.csproj" />
       <ProjectReference Include="..\Libs\PuppeteerPdfLib\PuppeteerPdfLib.csproj" />
+      <ProjectReference Include="..\Libs\QuestPdfLib\QuestPdfLib.csproj" />
       <ProjectReference Include="..\Libs\SelectPdfLib\SelectPdfLib.csproj" />
       <ProjectReference Include="..\Libs\SpirePdfLib\SpirePdfLib.csproj" />
     </ItemGroup>

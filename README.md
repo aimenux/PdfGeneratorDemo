@@ -7,6 +7,7 @@ Using various libraries in order to generate pdf files
 
 In this demo, i m generating a pdf file using various libraries :
 - [IronPdf](https://ironpdf.com)
+- [QuestPdf](https://www.questpdf.com)
 - [PdfSharp](https://github.com/ststeiger/PdfSharpCore)
 - [SpirePdf](https://www.e-iceblue.com/Introduce/pdf-for-net-introduce.html)
 - [SelectPdf](https://selectpdf.com/community-edition)

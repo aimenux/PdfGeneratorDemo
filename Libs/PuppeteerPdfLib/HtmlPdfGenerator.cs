@@ -12,10 +12,11 @@ namespace PuppeteerPdfLib
 
         public void Generate(string text, string filename)
         {
+            var html = $"<h1 style=\"font-size:100px;color:blue;\">{text}</h1>";
             var options = new LaunchOptions { Headless = true };
             using var browser = Puppeteer.LaunchAsync(options).GetAwaiter().GetResult();
             using var page = browser.NewPageAsync().GetAwaiter().GetResult();
-            page.SetContentAsync(text).GetAwaiter().GetResult();
+            page.SetContentAsync(html).GetAwaiter().GetResult();
             page.PdfAsync(filename).GetAwaiter().GetResult();
         }
 
