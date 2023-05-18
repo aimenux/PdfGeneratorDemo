@@ -15,5 +15,5 @@ In this demo, i m generating a pdf file using various libraries :
 - [DinkToPdf](https://github.com/hakanl/DinkToPdf)
 - [PuppeteerPdf](https://github.com/hardkoded/puppeteer-sharp)
 - [ITextSharpPdf](https://github.com/itext/itext7-dotnet)
-- 
-- **`Tools`** : net 7.0, pdf-generation, xunit, fluent-assertions
+
+**`Tools`** : net 7.0, pdf-generation, xunit, fluent-assertions
