@@ -5,10 +5,10 @@ namespace PuppeteerPdfLib
 {
     public class HtmlPdfGenerator : IPdfGenerator
     {
-        // static HtmlPdfGenerator()
-        // {
-        //     new BrowserFetcher().DownloadAsync(BrowserFetcher.DefaultChromiumRevision).GetAwaiter().GetResult();
-        // }
+        static HtmlPdfGenerator()
+        {
+            DownloadProcessRevisionAsync().GetAwaiter().GetResult();
+        }
 
         public void Generate(string text, string filename)
         {
@@ -17,6 +17,12 @@ namespace PuppeteerPdfLib
             using var page = browser.NewPageAsync().GetAwaiter().GetResult();
             page.SetContentAsync(text).GetAwaiter().GetResult();
             page.PdfAsync(filename).GetAwaiter().GetResult();
+        }
+
+        private static async Task DownloadProcessRevisionAsync()
+        {
+            using var browserFetcher = new BrowserFetcher();
+            await browserFetcher.DownloadAsync(BrowserFetcher.DefaultChromiumRevision);
         }
     }
 }
