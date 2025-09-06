@@ -11,6 +11,7 @@ using PuppeteerPdfLib;
 using QuestPdfLib;
 using SelectPdfLib;
 using SpirePdfLib;
+using WkHtmlToPdfLib;
 
 var services = new ServiceCollection();
 services
@@ -24,7 +25,8 @@ services
     .AddPuppeteerPdfLib()
     .AddQuestPdfLib()
     .AddSelectPdfLib()
-    .AddSpirePdfLib();
+    .AddSpirePdfLib()
+    .AddWkHtmlToPdfLib();
 
 var serviceProvider = services.BuildServiceProvider();
 foreach (var pdfGenerator in serviceProvider.GetServices<IPdfGenerator>())
