@@ -1,4 +1,4 @@
-using FluentAssertions;
+using AwesomeAssertions;
 using ITextSharpPdfLib;
 
 namespace ITextSharpPdfLibTests;

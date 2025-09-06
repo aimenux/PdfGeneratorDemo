@@ -1,5 +1,5 @@
 using AsposePdfLib;
-using FluentAssertions;
+using AwesomeAssertions;
 
 namespace AsposePdfLibTests;
 

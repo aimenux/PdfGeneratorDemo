@@ -1,6 +1,6 @@
-﻿using DinkToPdf;
+﻿using AwesomeAssertions;
+using DinkToPdf;
 using DinkToPdfLib;
-using FluentAssertions;
 
 namespace DinkToPdfLibTests;
 
