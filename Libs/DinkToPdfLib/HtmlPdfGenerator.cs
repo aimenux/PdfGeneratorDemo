@@ -25,16 +25,16 @@ public sealed class HtmlPdfGenerator : IPdfGenerator
         var html = $"<h1 style=\"font-size:100px;color:blue;\">{text}</h1>";
         var document = new HtmlToPdfDocument
         {
-            GlobalSettings = 
+            GlobalSettings =
             {
                 Out = filename,
                 PaperSize = PaperSizeToUse,
                 ColorMode = ColorModeToUse,
                 Orientation = OrientationToUse
             },
-            Objects = 
+            Objects =
             {
-                new ObjectSettings 
+                new ObjectSettings
                 {
                     PagesCount = true,
                     HtmlContent = html,

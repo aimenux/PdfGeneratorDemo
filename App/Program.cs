@@ -30,7 +30,7 @@ var serviceProvider = services.BuildServiceProvider();
 foreach (var pdfGenerator in serviceProvider.GetServices<IPdfGenerator>())
 {
     var filename = pdfGenerator.BuildFileName();
-    
+
     try
     {
         ConsoleColor.Green.WriteLine($"Generating {filename}");

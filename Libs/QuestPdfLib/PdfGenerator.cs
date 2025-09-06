@@ -11,13 +11,13 @@ public sealed class PdfGenerator : IPdfGenerator
     {
         QuestPDF.Settings.License = LicenseType.Community;
     }
-    
+
     public Task GenerateAsync(string text, string filename, CancellationToken cancellationToken)
     {
         Document
             .Create(container => container.Page(page => PageHandler(page, text)))
             .GeneratePdf(filename);
-        
+
         return Task.CompletedTask;
     }
 
