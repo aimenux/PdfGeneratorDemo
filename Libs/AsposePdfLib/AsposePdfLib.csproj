@@ -1,12 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
-
     <ItemGroup>
-      <PackageReference Include="Aspose.PDF" Version="23.5.0" />
+      <PackageReference Include="Aspose.PDF" />
     </ItemGroup>
 
     <ItemGroup>

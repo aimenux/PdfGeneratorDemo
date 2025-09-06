@@ -1,12 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
-
     <ItemGroup>
-      <PackageReference Include="FreeSpire.PDF" Version="8.6.0" />
+      <PackageReference Include="FreeSpire.PDF" />
     </ItemGroup>
 
     <ItemGroup>

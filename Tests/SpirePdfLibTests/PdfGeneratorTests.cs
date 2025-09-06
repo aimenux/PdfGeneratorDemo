@@ -1,22 +1,22 @@
 using FluentAssertions;
 using SpirePdfLib;
 
-namespace SpirePdfLibTests
+namespace SpirePdfLibTests;
+
+public class PdfGeneratorTests
 {
-    public class PdfGeneratorTests
+    [Fact]
+    public async Task Should_Generate_Pdf_File()
     {
-        [Fact]
-        public void Should_Generate_Pdf_File()
-        {
-            // arrange
-            var filename = $"SpirePdfLibTests-{DateTime.Now:yyMMddHHmmss}.pdf";
-            var generator = new PdfGenerator();
+        // arrange
+        var cancellationToken = CancellationToken.None;
+        var filename = $"SpirePdfLibTests-{DateTime.Now:yyMMddHHmmss}.pdf";
+        var generator = new PdfGenerator();
 
-            // act
-            generator.Generate("Hello World", filename);
+        // act
+        await generator.GenerateAsync("Hello World", filename, cancellationToken);
 
-            // assert
-            File.Exists(filename).Should().BeTrue();
-        }
+        // assert
+        File.Exists(filename).Should().BeTrue();
     }
 }

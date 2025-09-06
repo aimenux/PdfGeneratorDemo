@@ -1,15 +1,14 @@
 ﻿using Contracts;
 
-namespace IronPdfLib
+namespace IronPdfLib;
+
+public sealed class HtmlPdfGenerator : IPdfGenerator
 {
-    public class HtmlPdfGenerator : IPdfGenerator
+    public async Task GenerateAsync(string text, string filename, CancellationToken cancellationToken)
     {
-        public void Generate(string text, string filename)
-        {
-            var html = $"<h1 style=\"font-size:100px;color:blue;\">{text}</h1>";
-            using var converter = new HtmlToPdf();
-            using var document = converter.RenderHtmlAsPdf(html);
-            document.SaveAs(filename);
-        }
+        var html = $"<h1 style=\"font-size:100px;color:blue;\">{text}</h1>";
+        var converter = new ChromePdfRenderer();
+        using var document = await converter.RenderHtmlAsPdfAsync(html);
+        document.SaveAs(filename);
     }
 }

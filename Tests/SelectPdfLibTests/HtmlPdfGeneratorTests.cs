@@ -1,22 +1,22 @@
 using FluentAssertions;
 using SelectPdfLib;
 
-namespace SelectPdfLibTests
+namespace SelectPdfLibTests;
+
+public class HtmlPdfGeneratorTests
 {
-    public class HtmlPdfGeneratorTests
+    [Fact]
+    public async Task Should_Generate_Pdf_File()
     {
-        [Fact]
-        public void Should_Generate_Pdf_File()
-        {
-            // arrange
-            var filename = $"SelectPdfLibTests-{DateTime.Now:yyMMddHHmmss}.pdf";
-            var generator = new HtmlPdfGenerator();
+        // arrange
+        var cancellationToken = CancellationToken.None;
+        var filename = $"SelectPdfLibTests-{DateTime.Now:yyMMddHHmmss}.pdf";
+        var generator = new HtmlPdfGenerator();
 
-            // act
-            generator.Generate("Hello World", filename);
+        // act
+        await generator.GenerateAsync("Hello World", filename, cancellationToken);
 
-            // assert
-            File.Exists(filename).Should().BeTrue();
-        }
+        // assert
+        File.Exists(filename).Should().BeTrue();
     }
 }

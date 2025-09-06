@@ -1,7 +1,6 @@
-﻿namespace Contracts
+﻿namespace Contracts;
+
+public interface IPdfGenerator
 {
-    public interface IPdfGenerator
-    {
-        void Generate(string text, string filename);
-    }
+    Task GenerateAsync(string text, string filename, CancellationToken cancellationToken);
 }

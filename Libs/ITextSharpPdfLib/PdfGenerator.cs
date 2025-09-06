@@ -3,17 +3,17 @@ using iText.Kernel.Pdf;
 using iText.Layout;
 using iText.Layout.Element;
 
-namespace ITextSharpPdfLib
+namespace ITextSharpPdfLib;
+
+public sealed class PdfGenerator : IPdfGenerator
 {
-    public class PdfGenerator : IPdfGenerator
+    public Task GenerateAsync(string text, string filename, CancellationToken cancellationToken)
     {
-        public void Generate(string text, string filename)
-        {
-            using var writer = new PdfWriter(filename);
-            using var pdf = new PdfDocument(writer);
-            using var document = new Document(pdf);
-            document.Add(new Paragraph(text));
-            document.Close();
-        }
+        using var writer = new PdfWriter(filename);
+        using var pdf = new PdfDocument(writer);
+        using var document = new Document(pdf);
+        document.Add(new Paragraph(text));
+        document.Close();
+        return Task.CompletedTask;
     }
 }

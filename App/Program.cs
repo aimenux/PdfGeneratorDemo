@@ -1,29 +1,41 @@
 ﻿using App;
+using AsposePdfLib;
 using Contracts;
+using DinkToPdfLib;
+using IronPdfLib;
+using ITextSharpPdfLib;
 using Microsoft.Extensions.DependencyInjection;
+using PdfSharpLib;
+using PugPdfLib;
+using PuppeteerPdfLib;
+using QuestPdfLib;
+using SelectPdfLib;
+using SpirePdfLib;
 
 var services = new ServiceCollection();
-services.AddTransient<IPdfGenerator, QuestPdfLib.PdfGenerator>();
-services.AddTransient<IPdfGenerator, PdfSharpLib.PdfGenerator>();
-services.AddTransient<IPdfGenerator, SpirePdfLib.PdfGenerator>();
-services.AddTransient<IPdfGenerator, AsposePdfLib.PdfGenerator>();
-services.AddTransient<IPdfGenerator, SelectPdfLib.PdfGenerator>();
-services.AddTransient<IPdfGenerator, PugPdfLib.HtmlPdfGenerator>();
-services.AddTransient<IPdfGenerator, IronPdfLib.HtmlPdfGenerator>();
-services.AddTransient<IPdfGenerator, DinkToPdfLib.HtmlPdfGenerator>();
-services.AddTransient<IPdfGenerator, ITextSharpPdfLib.PdfGenerator>();
-services.AddTransient<IPdfGenerator, SelectPdfLib.HtmlPdfGenerator>();
-services.AddTransient<IPdfGenerator, PuppeteerPdfLib.HtmlPdfGenerator>();
+services
+    .AddAsposePdfLib()
+    .AddDinkToPdfLib()
+    .AddIronPdfLib()
+    .AddITextSharpPdfLib()
+    .AddPdfSharpLib()
+    .AddPdfSharpLib()
+    .AddPugPdfLib()
+    .AddPuppeteerPdfLib()
+    .AddQuestPdfLib()
+    .AddSelectPdfLib()
+    .AddSpirePdfLib();
 
 var serviceProvider = services.BuildServiceProvider();
 foreach (var pdfGenerator in serviceProvider.GetServices<IPdfGenerator>())
 {
-    var filename = BuildFileName(pdfGenerator);
+    var filename = pdfGenerator.BuildFileName();
     
     try
     {
         ConsoleColor.Green.WriteLine($"Generating {filename}");
-        pdfGenerator.Generate("Hello World!", filename);
+        using var cts = new CancellationTokenSource(TimeSpan.FromMinutes(1));
+        await pdfGenerator.GenerateAsync("Hello World!", filename, cts.Token);
     }
     catch (Exception ex)
     {
@@ -33,10 +45,3 @@ foreach (var pdfGenerator in serviceProvider.GetServices<IPdfGenerator>())
 
 ConsoleColor.Yellow.WriteLine("Press any key to exit program !");
 Console.ReadKey();
-
-static string BuildFileName(IPdfGenerator pdfGenerator)
-{
-    const string extension = "pdf";
-    var type = pdfGenerator.GetType();
-    return $"{nameof(App)}.{type.FullName}.{extension}";
-}

@@ -1,10 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
-
     <ItemGroup>
       <Compile Remove="Links\**" />
       <EmbeddedResource Remove="Links\**" />
@@ -12,7 +7,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="PugPDF.Core" Version="1.0.9" />
+      <PackageReference Include="PugPDF.Core" />
     </ItemGroup>
 
     <ItemGroup>

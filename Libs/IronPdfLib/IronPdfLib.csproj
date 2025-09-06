@@ -1,12 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
-
     <ItemGroup>
-      <PackageReference Include="IronPdf" Version="2023.5.8" />
+      <PackageReference Include="IronPdf" />
     </ItemGroup>
 
     <ItemGroup>

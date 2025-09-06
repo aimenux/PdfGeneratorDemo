@@ -1,12 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
-
     <ItemGroup>
-      <PackageReference Include="PuppeteerSharp" Version="10.0.0" />
+      <PackageReference Include="PuppeteerSharp" />
     </ItemGroup>
 
     <ItemGroup>

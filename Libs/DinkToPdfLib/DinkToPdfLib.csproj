@@ -1,25 +1,76 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="DinkToPdf.Standard" Version="1.1.0" />
-  </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="DinkToPdf" />
+      <PackageReference Include="HtmlToPdfConverter.Core" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Contracts\Contracts.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\Contracts\Contracts.csproj" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\WkhtmltopdfLib\v0.12.4\32 bit\libwkhtmltox.dll">
-      <Link>Links\32\libwkhtmltox.dll</Link>
-    </None>
-    <None Include="..\WkhtmltopdfLib\v0.12.4\64 bit\libwkhtmltox.dll">
-      <Link>Links\64\libwkhtmltox.dll</Link>
-    </None>
-  </ItemGroup>
+<!--    <ItemGroup>-->
+<!--        <None Include="..\WkhtmltopdfLib\v0.12.4\32 bit\libwkhtmltox.dll">-->
+<!--            <Link>Links\32\libwkhtmltox.dll</Link>-->
+<!--        </None>-->
+<!--        <None Include="..\WkhtmltopdfLib\v0.12.4\64 bit\libwkhtmltox.dll">-->
+<!--            <Link>Links\64\libwkhtmltox.dll</Link>-->
+<!--        </None>-->
+<!--    </ItemGroup>-->
+    
+<!--    <ItemGroup>-->
+<!--        <Content Include="wkhtmltopdf\x64\libwkhtmltox.dll" Pack="true" PackagePath="runtimes\win-x64\native">-->
+<!--            <CopyToOutputDirectory>Always</CopyToOutputDirectory>-->
+<!--            <CopyToPublishDirectory>Always</CopyToPublishDirectory>-->
+<!--        </Content>-->
+<!--        <Content Include="wkhtmltopdf\x64\libwkhtmltox.dylib" Pack="true" PackagePath="runtimes\osx-x64\native">-->
+<!--            <CopyToOutputDirectory>Always</CopyToOutputDirectory>-->
+<!--            <CopyToPublishDirectory>Always</CopyToPublishDirectory>-->
+<!--        </Content>-->
+<!--        <Content Include="wkhtmltopdf\x64\libwkhtmltox.so" Pack="true" PackagePath="runtimes\linux-x64\native">-->
+<!--            <CopyToOutputDirectory>Always</CopyToOutputDirectory>-->
+<!--            <CopyToPublishDirectory>Always</CopyToPublishDirectory>-->
+<!--        </Content>-->
+<!--    </ItemGroup>-->
+
+<!--    <None Update="wkhtmltopdf\windows\x64\wkhtmltopdf.exe">-->
+<!--        <CopyToOutputDirectory>Always</CopyToOutputDirectory>-->
+<!--    </None>-->
+<!--    <None Update="wkhtmltopdf\windows\x86\wkhtmltopdf.exe">-->
+<!--        <CopyToOutputDirectory>Always</CopyToOutputDirectory>-->
+<!--    </None>-->
+    
+<!--    <ItemGroup>-->
+<!--        <Content Include="wkhtmltopdf\windows\x86\wkhtmltopdf.exe">-->
+<!--            <CopyToOutputDirectory>Always</CopyToOutputDirectory>-->
+<!--        </Content>-->
+<!--        <Content Include="wkhtmltopdf\windows\x64\wkhtmltopdf.exe">-->
+<!--            <CopyToOutputDirectory>Always</CopyToOutputDirectory>-->
+<!--        </Content>-->
+<!--    </ItemGroup>-->
+
+<!--    <ItemGroup>-->
+<!--        <None Update="wkhtmltopdf\windows\x64\wkhtmltopdf.exe">-->
+<!--            <CopyToOutputDirectory>Always</CopyToOutputDirectory>-->
+<!--        </None>-->
+<!--        <None Update="wkhtmltopdf\windows\x86\wkhtmltopdf.exe">-->
+<!--            <CopyToOutputDirectory>Always</CopyToOutputDirectory>-->
+<!--        </None>-->
+<!--    </ItemGroup>-->
+
+<!--    <ItemGroup>-->
+<!--        <None Include="..\WkhtmltopdfLib\x86\libwkhtmltox.dll">-->
+<!--            <Link>Links\32\libwkhtmltox.dll</Link>-->
+<!--        </None>-->
+<!--        <None Include="..\WkhtmltopdfLib\v0.12.4\64 bit\libwkhtmltox.dll">-->
+<!--            <Link>Links\64\libwkhtmltox.dll</Link>-->
+<!--        </None>-->
+<!--    </ItemGroup>-->
 
 </Project>
