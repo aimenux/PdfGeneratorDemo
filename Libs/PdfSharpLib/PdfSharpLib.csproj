@@ -2,6 +2,7 @@
 
     <ItemGroup>
       <PackageReference Include="PdfSharpCore" />
+      <PackageReference Include="Polybioz.HtmlRenderer.PdfSharp.Core" />
     </ItemGroup>
 
     <ItemGroup>
