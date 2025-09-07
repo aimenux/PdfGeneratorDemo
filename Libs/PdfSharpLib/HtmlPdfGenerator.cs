@@ -11,7 +11,7 @@ public sealed class HtmlPdfGenerator : IPdfGenerator
     {
         using var pdf = new PdfDocument();
         var html = $"<h1 style=\"font-size:100px;color:blue;\">{text}</h1>";
-        HtmlRendererCore.PdfGenerator.AddPdfPages(pdf, html , PageSize.A4);
+        HtmlRendererCore.PdfGenerator.AddPdfPages(pdf, html, PageSize.A4);
         pdf.Save(filename);
         return Task.CompletedTask;
     }
