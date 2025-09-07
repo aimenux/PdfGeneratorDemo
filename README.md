@@ -9,6 +9,7 @@ In this demo, i m generating a pdf file using various libraries :
 - [IronPdf](https://ironpdf.com)
 - [QuestPdf](https://www.questpdf.com)
 - [PdfSharp](https://github.com/ststeiger/PdfSharpCore)
+- [MigraDoc](https://github.com/ststeiger/PdfSharpCore/blob/master/docs/MigraDocCore/index.md)
 - [SpirePdf](https://www.e-iceblue.com/Introduce/pdf-for-net-introduce.html)
 - [SelectPdf](https://selectpdf.com/community-edition)
 - [AsposePdf](https://products.aspose.com/pdf/net)

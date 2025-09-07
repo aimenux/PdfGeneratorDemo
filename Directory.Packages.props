@@ -19,6 +19,7 @@
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="9.0.8" />
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.8" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageVersion Include="MigraDocCore.Rendering" Version="1.3.67" />
     <PackageVersion Include="PdfSharpCore" Version="1.3.67" />
     <PackageVersion Include="PugPDF.Core" Version="1.0.9" />
     <PackageVersion Include="PuppeteerSharp" Version="20.2.2" />

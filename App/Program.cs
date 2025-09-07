@@ -5,6 +5,7 @@ using DinkToPdfLib;
 using IronPdfLib;
 using ITextSharpPdfLib;
 using Microsoft.Extensions.DependencyInjection;
+using MigraDocCoreLib;
 using PdfSharpLib;
 using PugPdfLib;
 using PuppeteerPdfLib;
@@ -20,7 +21,7 @@ services
     .AddIronPdfLib()
     .AddITextSharpPdfLib()
     .AddPdfSharpLib()
-    .AddPdfSharpLib()
+    .AddMigraDocCoreLib()
     .AddPugPdfLib()
     .AddPuppeteerPdfLib()
     .AddQuestPdfLib()
