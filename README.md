@@ -14,7 +14,7 @@ In this demo, i m generating a pdf file using various libraries :
 - [SelectPdf](https://selectpdf.com/community-edition)
 - [AsposePdf](https://products.aspose.com/pdf/net)
 - [PugPdf](https://github.com/pug-pelle-p/pugpdf)
-- [DinkToPdf](https://github.com/hakanl/DinkToPdf)
+- [DinkToPdf](https://github.com/rdvojmoc/DinkToPdf)
 - [WkHtmlToPdf](https://github.com/HakanL/WkHtmlToPdf-DotNet)
 - [PuppeteerPdf](https://github.com/hardkoded/puppeteer-sharp)
 - [ITextSharpPdf](https://github.com/itext/itext7-dotnet)
