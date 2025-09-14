@@ -13,6 +13,7 @@ In this demo, i m generating a pdf file using various libraries :
 - [SpirePdf](https://www.e-iceblue.com/Introduce/pdf-for-net-introduce.html)
 - [SelectPdf](https://selectpdf.com/community-edition)
 - [AsposePdf](https://products.aspose.com/pdf/net)
+- [PdfPig](https://github.com/UglyToad/PdfPig)
 - [PugPdf](https://github.com/pug-pelle-p/pugpdf)
 - [DinkToPdf](https://github.com/rdvojmoc/DinkToPdf)
 - [WkHtmlToPdf](https://github.com/HakanL/WkHtmlToPdf-DotNet)

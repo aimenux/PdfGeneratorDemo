@@ -10,6 +10,7 @@
       <ProjectReference Include="..\Libs\IronPdfLib\IronPdfLib.csproj" />
       <ProjectReference Include="..\Libs\ITextSharpPdfLib\ITextSharpPdfLib.csproj" />
       <ProjectReference Include="..\Libs\MigraDocCoreLib\MigraDocCoreLib.csproj" />
+      <ProjectReference Include="..\Libs\PdfPigLib\PdfPigLib.csproj" />
       <ProjectReference Include="..\Libs\PdfSharpLib\PdfSharpLib.csproj" />
       <ProjectReference Include="..\Libs\PugPdfLib\PugPdfLib.csproj" />
       <ProjectReference Include="..\Libs\PuppeteerPdfLib\PuppeteerPdfLib.csproj" />
