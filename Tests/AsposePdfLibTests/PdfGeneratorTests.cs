@@ -10,7 +10,7 @@ public class PdfGeneratorTests
     {
         // arrange
         var cancellationToken = CancellationToken.None;
-        var filename = $"AsposePdfLibTests-{DateTime.Now:yyMMddHHmmss}.pdf";
+        var filename = $"AsposePdfLibTests-{DateTime.Now:yyMMddHHmmssfff}.pdf";
         var generator = new PdfGenerator();
 
         // act

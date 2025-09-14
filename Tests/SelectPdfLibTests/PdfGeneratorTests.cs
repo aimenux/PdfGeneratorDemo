@@ -10,7 +10,7 @@ public class PdfGeneratorTests
     {
         // arrange
         var cancellationToken = CancellationToken.None;
-        var filename = $"SelectPdfLibTests-{DateTime.Now:yyMMddHHmmss}.pdf";
+        var filename = $"SelectPdfLibTests-{DateTime.Now:yyMMddHHmmssfff}.pdf";
         var generator = new PdfGenerator();
 
         // act

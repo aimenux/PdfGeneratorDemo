@@ -10,7 +10,7 @@ public class HtmlPdfGeneratorTests
     {
         // arrange
         var cancellationToken = CancellationToken.None;
-        var filename = $"PugPdfLibTests-{DateTime.Now:yyMMddHHmmss}.pdf";
+        var filename = $"PugPdfLibTests-{DateTime.Now:yyMMddHHmmssfff}.pdf";
         var generator = new HtmlPdfGenerator();
 
         // act

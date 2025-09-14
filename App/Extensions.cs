@@ -20,7 +20,7 @@ public static class Extensions
     {
         const string extension = "pdf";
         var name = pdfGenerator.GetType().FullName?.Replace(".", "-");
-        return $"{DateTime.Now:yyyyMMddHHmmss}-{name}.{extension}";
+        return $"{DateTime.Now:yyMMddHHmmssfff}-{name}.{extension}";
     }
 
     private static void EnableConsole()

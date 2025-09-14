@@ -10,7 +10,7 @@ public class HtmlPdfGeneratorTests
     {
         // arrange
         var cancellationToken = CancellationToken.None;
-        var filename = $"IronPdfLibTests-{DateTime.Now:yyMMddHHmmss}.pdf";
+        var filename = $"IronPdfLibTests-{DateTime.Now:yyMMddHHmmssfff}.pdf";
         var generator = new HtmlPdfGenerator();
 
         // act

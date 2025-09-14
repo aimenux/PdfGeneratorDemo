@@ -11,7 +11,7 @@ public class PdfGeneratorTests
     {
         // arrange
         var cancellationToken = CancellationToken.None;
-        var filename = $"WkHtmlToPdfLibTests-{DateTime.Now:yyMMddHHmmss}.pdf";
+        var filename = $"WkHtmlToPdfLibTests-{DateTime.Now:yyMMddHHmmssfff}.pdf";
         var convertor = new StaSynchronizedConverter(new PdfTools());
         var generator = new HtmlPdfGenerator(convertor);
 

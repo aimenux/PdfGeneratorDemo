@@ -11,7 +11,7 @@ public class HtmlPdfGeneratorTests
     {
         // arrange
         var cancellationToken = CancellationToken.None;
-        var filename = $"DinkToPdfLibTests-{DateTime.Now:yyMMddHHmmss}.pdf";
+        var filename = $"DinkToPdfLibTests-{DateTime.Now:yyMMddHHmmssfff}.pdf";
         var convertor = new StaSynchronizedConverter(new PdfTools());
         var generator = new HtmlPdfGenerator(convertor);
 
